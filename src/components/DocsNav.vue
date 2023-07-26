@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+
+defineEmits(['onDocNavLink'])
 </script>
 
 <template>
-  <ul>
+  <ul @click="$emit('onDocNavLink')">
     <li><RouterLink class="nav-link" to="/docs">Introduction</RouterLink></li>
     <li><RouterLink class="nav-link" to="/docs/authentication">Authentication</RouterLink></li>
     <li><RouterLink class="nav-link" to="/docs/errorcodes">Error Codes</RouterLink></li>

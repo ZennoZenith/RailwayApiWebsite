@@ -2,17 +2,16 @@
 const codeErrorExample = `{
   "errors": [
     {
-      httpCode: StatusCodes.NOT_FOUND,
-      code: 'ERR-0003',
-      type: 'NotFound',
-      title: 'Resource not found',
-      description: 'No resource found for given parameters.',
-      href: https://railwayapi.site/docs/errorcodes#NotFound,
-      path: '',
+      "httpCode": 404,
+      "code": "ERR-0003",
+      "type": "NotFound",
+      "title": "Resource not found",
+      "description": "No resource found for given parameters.",
+      "href": "https://railwayapi.site/docs/errorcodes#NotFound",
+      "path": ""
     }
   ]
-}
-`
+}`
 </script>
 
 <template>

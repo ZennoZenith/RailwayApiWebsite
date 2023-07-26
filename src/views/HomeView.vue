@@ -87,8 +87,8 @@
         Example: If you made 500 requests at 10:15AM and 500 requests at 10:25AM, your API key would
         become temporarily blocked. This temporary block of your API key would cease at 11:15AM, at
         which point you could make 500 requests. At 11:25AM, you could then make another 500
-        requests. Anyone can register for an api.nasa.gov key, which can be used to access data
-        across federal agencies.
+        requests. Anyone can register for an API key, which can be used to access data across
+        federal agencies.
       </p>
     </section>
 
@@ -100,6 +100,15 @@
           <a href="https://enquiry.indianrail.gov.in/ntes/">
             Indian Rail - National Train Enquiry System - Indian Railways
           </a>
+        </li>
+      </ul>
+      <br />
+      <br />
+      <h4>This site was inspired by</h4>
+      <ul>
+        <li><a href="https://api.nasa.gov/">NASA website</a></li>
+        <li>
+          <a href="https://www.rev.com/api/responsecodes"> Rev.com </a>
         </li>
       </ul>
     </section>

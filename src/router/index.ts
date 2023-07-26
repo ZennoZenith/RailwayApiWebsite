@@ -15,6 +15,7 @@ import DocsOpStationsInfoView from '../views/DocsOpStationsInfoView.vue'
 import DocsOpSchedulesViewVue from '../views/DocsOpSchedulesView.vue'
 import DocsOpTrainsBtwStationsView from '../views/DocsOpTrainsBtwStationsView.vue'
 import DocsOpMiscView from '../views/DocsOpMiscView.vue'
+import NotFound from '../views/NotFoundView.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -94,6 +95,7 @@ const routes: RouteRecordRaw[] = [
       },
     ],
   },
+  { path: '/:pathMatch(.*)', name: 'notFound', component: NotFound },
 ]
 
 const router = createRouter({

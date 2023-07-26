@@ -33,6 +33,7 @@ import { RouterLink } from 'vue-router'
   display: block;
   margin: 0 auto;
   border: none !important;
+  margin-bottom: -1px;
 }
 
 .github-logo {
