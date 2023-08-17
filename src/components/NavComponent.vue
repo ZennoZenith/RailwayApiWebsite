@@ -3,15 +3,6 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <a href="https://github.com/ZennoZenith/RailwayApiWebsite" target="_blank">
-    <img
-      alt="Github logo"
-      class="github-logo"
-      src="@/assets/github-mark/github-mark.svg"
-      width="125"
-      height="125" />
-  </a>
-
   <RouterLink class="text-decoration-none company-logo-container" to="/">
     <div class="company-logo">
       <img alt="RailwayAPI logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
@@ -20,6 +11,9 @@ import { RouterLink } from 'vue-router'
   </RouterLink>
 
   <nav class="nav-link-container">
+    <a href="https://github.com/ZennoZenith/RailwayApiWebsite" class="github-logo-link" target="_blank">
+      <img alt="Github logo" src="@/assets/github-mark/github-mark.svg" class="github-logo" />
+    </a>
     <RouterLink to="/" class="nav-link text-decoration-none">API Home</RouterLink>
     <!-- <RouterLink to="/" class="nav-link text-decoration-none">Quickstart</RouterLink> -->
     <RouterLink to="/docs" class="nav-link text-decoration-none">Documentation</RouterLink>
@@ -36,21 +30,14 @@ import { RouterLink } from 'vue-router'
   margin-bottom: -1px;
 }
 
-.github-logo {
-  position: absolute;
-  right: 1em;
-  top: 1em;
-  height: 2em;
-  width: 2em;
-}
+
 .company-name {
   font-family: 'Rubik', sans-serif;
   text-decoration: none;
 }
+
 .company-logo {
-  margin: 1em 0;
-  /* padding-right: 4em; */
-  /* height: 5em; */
+  padding-top: 1em;
   display: flex;
   width: 20em;
   justify-content: center;
@@ -68,15 +55,26 @@ import { RouterLink } from 'vue-router'
 }
 
 .nav-link-container {
+  position: relative;
+  width: 100vw;
   display: flex;
-  gap: max(3em, 4vw);
+  gap: max(2em, 4vw);
   justify-content: center;
   border-bottom: 1px rgba(151, 151, 149, 0.304) solid;
 }
 
+.github-logo-link {
+  position: absolute;
+  right: 1em;
+  top: -5em;
+}
+
+.github-logo {
+  width: 30px;
+}
+
 .nav-link {
-  /* height: 100%; */
-  padding-bottom: 1em;
+  padding: 1em 0;
   font-size: 1em;
   color: #282828;
 }

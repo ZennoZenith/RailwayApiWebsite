@@ -41,10 +41,9 @@
   border: solid 1px gray;
   background-color: rgb(245, 245, 245);
 }
+
 main {
-  margin: 2em 2em;
-  padding-left: max(12vw, 1em);
-  padding-right: max(24vw, 1em);
+  padding: 0 max(12vw, 1em);
 }
 
 h1 {
@@ -67,5 +66,12 @@ ol {
 
 h2 {
   margin-top: 1em;
+}
+
+@media (width <=800px) {
+  main {
+    display: block;
+    padding: 0 2em;
+  }
 }
 </style>

@@ -10,4 +10,10 @@ import NavComponent from '@/components/NavComponent.vue'
   <RouterView />
 </template>
 
-<style scoped></style>
+<style scoped>
+header {
+  position: sticky;
+  top: -5.5em;
+  background-color: white;
+}
+</style>

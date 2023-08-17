@@ -116,7 +116,7 @@ h2 {
   grid-area: Heading;
   color: rgb(46, 26, 105);
   font-family: 'Raleway', sans-serif;
-  font-size: 2.3em;
+  font-size: 1.7rem;
   letter-spacing: 1px;
   /* font-weight: bolder; */
 }
@@ -134,7 +134,7 @@ h3 {
   grid-area: Heading;
   color: rgb(46, 26, 105);
   font-family: 'Raleway', sans-serif;
-  font-size: 1.7em;
+  font-size: 1.3em;
   letter-spacing: 1px;
   /* font-weight: bolder; */
 }
@@ -145,10 +145,12 @@ h3:nth-child(n + 2) {
 
 .table {
   border: 1px rgba(151, 151, 149, 0.304) solid;
+  text-align: left;
 }
 
 .table span {
   padding: 5px;
+  overflow-x: scroll;
 }
 
 .table > .table-row:first-child {
@@ -164,6 +166,7 @@ h3:nth-child(n + 2) {
   grid-template-columns: 1.2fr 1fr 3fr 2fr 2fr;
   column-gap: 10px;
 }
+
 .table-error-response .table-row {
   display: grid;
   grid-template-columns: 1fr 5fr;

@@ -41,6 +41,12 @@
       </div>
     </section>
     <section class="info-section">
+      <h3>Demo</h3>
+      <p>
+        A demo website made using this API with <a href="https://vuejs.org/" target="_blank">VueJs</a> and <a
+          href="https://www.npmjs.com/package/api-railway" target="_blank">api-railway</a> wrapper : <a
+          href="https://demo.railwayapi.site" target="_blank"> demo.railwayapi.site </a>
+      </p>
       <h3>Authentication</h3>
       <p>
         <b> You do not need to authenticate in order to explore the RailwayAPI data. </b> However,
@@ -119,13 +125,13 @@
 section {
   padding: 5em 10vw 5em 10vw;
   text-align: center;
-  min-height: 40vw;
 }
 
 section:nth-child(2n) {
   color: white;
   background-color: rgb(18, 15, 25);
 }
+
 section:nth-child(2n) h2 {
   color: inherit;
 }
@@ -138,6 +144,7 @@ h2 {
   /* font-weight: bolder; */
   margin-bottom: 1em;
 }
+
 .intro-section p {
   font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
     sans-serif;
@@ -158,11 +165,13 @@ h2 {
   border: 1px solid transparent;
   border-radius: 5px;
 }
+
 .start-buiding:hover {
   outline: none;
   background: #c94d20;
   border: 1px solid transparent;
 }
+
 .start-buiding:focus {
   outline: none;
   background: #c94d20;
@@ -183,6 +192,7 @@ h2 {
   text-align: left;
   /* list-style-position: inside; */
 }
+
 .grid h3 {
   font-size: x-large;
 }
@@ -190,6 +200,7 @@ h2 {
 .icon {
   width: 2em;
 }
+
 ul {
   padding-left: 1em;
 }
@@ -202,12 +213,14 @@ ul {
   letter-spacing: 1px;
   margin-top: 1.5em;
 }
+
 .info-section p {
   text-align: left;
   font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
     sans-serif;
   font-size: 1.7em;
 }
+
 .info-section ul {
   text-align: left;
   font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
@@ -221,7 +234,7 @@ ul {
   min-height: 0;
 }
 
-@media (width <= 50em) {
+@media (width <=50em) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }

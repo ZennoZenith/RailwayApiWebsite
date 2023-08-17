@@ -146,12 +146,7 @@ const responseExample = `{
     </div>
     <div class="table-row">
       <h5 id="sample-response">Sample response</h5>
-      <CodeBlock
-        :code="responseExample"
-        :highlightjs="true"
-        lang="json"
-        theme="neon-bunny"
-        class="min-width" />
+      <CodeBlock :code="responseExample" :highlightjs="true" lang="json" theme="neon-bunny" class="min-width" />
     </div>
   </section>
 </template>
@@ -175,7 +170,7 @@ h2 {
   grid-area: Heading;
   color: rgb(46, 26, 105);
   font-family: 'Raleway', sans-serif;
-  font-size: 2.3em;
+  font-size: 1.8em;
   letter-spacing: 1px;
   /* font-weight: bolder; */
 }
@@ -206,12 +201,12 @@ li {
   border: 1px rgba(151, 151, 149, 0.304) solid;
 }
 
-.table-row > * {
+.table-row>* {
   padding: 5px;
   /* white-space: pre; */
 }
 
-.table-row > :first-child {
+.table-row> :first-child {
   background-color: rgb(244, 245, 246);
 }
 
@@ -221,6 +216,6 @@ li {
 
 .table .table-row {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 7em 1fr;
 }
 </style>

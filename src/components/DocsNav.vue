@@ -1,7 +1,20 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+const props = defineProps({ hamburgerOpenState: { type: Boolean, required: true } })
+const emits = defineEmits(['onDocNavLink', 'closeHamburger'])
 
-defineEmits(['onDocNavLink'])
+document.onclick = function (event) {
+  if (props.hamburgerOpenState === false) return
+
+  if (
+    (event.target as HTMLElement).id === 'docs-nav-container' ||
+    (event.target as HTMLElement).id === 'hamburger'
+  ) {
+    return
+  }
+  console.log(event.target)
+  emits('closeHamburger')
+}
 </script>
 
 <template>

@@ -58,7 +58,7 @@ const responseExample3 = `{
 
   <code class="code">BASE_URL = api.railwayapi.site</code>
 
-  <h3>GET /trains/{trainNumbers}</h3>
+  <h3>GET /states</h3>
 
   <section class="table">
     <div class="table-row">
@@ -105,12 +105,7 @@ const responseExample3 = `{
     </div>
     <div class="table-row">
       <h5 id="sample-response">Sample response</h5>
-      <CodeBlock
-        :code="responseExample"
-        :highlightjs="true"
-        lang="json"
-        theme="neon-bunny"
-        class="min-width" />
+      <CodeBlock :code="responseExample" :highlightjs="true" lang="json" theme="neon-bunny" class="min-width" />
     </div>
   </section>
 
@@ -160,12 +155,7 @@ const responseExample3 = `{
     </div>
     <div class="table-row">
       <h5 id="sample-response">Sample response</h5>
-      <CodeBlock
-        :code="responseExample2"
-        :highlightjs="true"
-        lang="json"
-        theme="neon-bunny"
-        class="min-width" />
+      <CodeBlock :code="responseExample2" :highlightjs="true" lang="json" theme="neon-bunny" class="min-width" />
     </div>
   </section>
 
@@ -215,12 +205,7 @@ const responseExample3 = `{
     </div>
     <div class="table-row">
       <h5 id="sample-response">Sample response</h5>
-      <CodeBlock
-        :code="responseExample3"
-        :highlightjs="true"
-        lang="json"
-        theme="neon-bunny"
-        class="min-width" />
+      <CodeBlock :code="responseExample3" :highlightjs="true" lang="json" theme="neon-bunny" class="min-width" />
     </div>
   </section>
 </template>
@@ -244,7 +229,7 @@ h2 {
   grid-area: Heading;
   color: rgb(46, 26, 105);
   font-family: 'Raleway', sans-serif;
-  font-size: 2.3em;
+  font-size: 1.8em;
   letter-spacing: 1px;
   /* font-weight: bolder; */
 }
@@ -275,12 +260,17 @@ li {
   border: 1px rgba(151, 151, 149, 0.304) solid;
 }
 
-.table-row > * {
+.table-row {
+  min-width: 0;
+}
+
+
+.table-row>* {
   padding: 5px;
   /* white-space: pre; */
 }
 
-.table-row > :first-child {
+.table-row> :first-child {
   background-color: rgb(244, 245, 246);
 }
 
@@ -290,6 +280,6 @@ li {
 
 .table .table-row {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 7em 1fr;
 }
 </style>

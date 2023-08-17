@@ -94,7 +94,7 @@ h2 {
   grid-area: Heading;
   color: rgb(46, 26, 105);
   font-family: 'Raleway', sans-serif;
-  font-size: 2.3em;
+  font-size: 1.8em;
   letter-spacing: 1px;
   /* font-weight: bolder; */
 }
@@ -117,7 +117,7 @@ p {
   padding: 5px;
 }
 
-.table > .table-row:first-child {
+.table>.table-row:first-child {
   background-color: rgb(244, 245, 246);
 }
 

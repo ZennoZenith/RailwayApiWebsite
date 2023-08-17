@@ -105,7 +105,6 @@ const errorCodes = [
   },
 ]
 </script>
-
 <template>
   <h2>Error Codes</h2>
 
@@ -149,7 +148,7 @@ h2 {
   grid-area: Heading;
   color: rgb(46, 26, 105);
   font-family: 'Raleway', sans-serif;
-  font-size: 2.3em;
+  font-size: 1.8em;
   letter-spacing: 1px;
 }
 
@@ -177,6 +176,7 @@ p {
 
 .table span {
   padding: 5px;
+  overflow-x: scroll;
 }
 
 .table > .table-row:first-child {
@@ -189,7 +189,7 @@ p {
 
 .table-error-codes .table-row {
   display: grid;
-  grid-template-columns: 1fr 0.5fr 4fr 1.6fr;
+  grid-template-columns: 1fr 1fr 4fr 1.6fr;
   column-gap: 10px;
 }
 </style>
